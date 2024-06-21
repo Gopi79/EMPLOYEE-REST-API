@@ -108,6 +108,7 @@ public class EmployeeService
         }
     }
 
+    //Patch Employee
     public  EmployeeDto partiallyUpdate(Integer empId,EmployeeDto employeeDto)
     {
         Optional<Employee> employee = employeeRepository.findById(empId);
@@ -143,6 +144,7 @@ public class EmployeeService
         }
     }
 
+    //Delete Employee
     public String deleteEmployee(Integer empId)
     {
         Optional<Employee> emp = employeeRepository.findById(empId);
