@@ -14,7 +14,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class EmployeeDto
 {
-    private Integer id;
+    private Long id;
 
     @NotEmpty(message = "Please Provide Valid Name")
     private String name;
